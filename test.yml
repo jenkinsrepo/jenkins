@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+#  sudo: yes
+ # remote_user: root
+  tasks:
+   - name: create file
+     file:
+       path: /home/ubuntu/hello3
+       state: directory
+       mode: 0777
